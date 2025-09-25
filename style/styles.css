@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background: #403030;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    background: #694d4d;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    background: #555;
+    border-radius: 3px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.photo {
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.job {
+    border-left: 3px solid #333;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.news-item, .product {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.product img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.footer {
+    background: #403030;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
