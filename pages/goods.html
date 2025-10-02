@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/styles.css">
     <title>Товары</title>
 </head>
+
 <body>
-    <div class="header">Хэдер</div>
-    
-    <div class="nav">
-        <a href="../index.html">Главная</a>
-        <a href="news.html">Новости</a>
-        <a href="goods.html">Товары</a>
-        <a href="contacts.html">Контакты</a>
-    </div>
+    <div class="page-container">
+        <header class="header">
+            <h1>Хэдер</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
 
-    <div class="content">
-        <h1>Товары</h1>
-        
-        <div class="product">
-            <img src="../images/img1.jpg" alt="Товар 1">
-            <h3>Офисная футболка</h3>
-            <p>1500 руб.</p>
-        </div>
+        <main class="content">
+            <article class="content-header">
+                <h1 class>Товары</h1>
+            </article>
 
-        <div class="product">
-            <img src="../images/img2.jpg" alt="Товар 2">
-            <h3>Комфортные тапочки</h3>
-            <p>800 руб.</p>
-        </div>
+            <section class="product-header">
+                <img class="photo1" src="../images/img1.jpg" alt="Товар 1">
+                <h3 class="product-name">Офисная футболка</h3>
+                <p class="product-cost">1500 руб.</p>
+            </section>
 
-        <div class="product">
-            <img src="../images/img3.jpg" alt="Товар 3">
-            <h3>Прикольный костюмчик</h3>
-            <p>2500 руб.</p>
-        </div>
-    </div>
+            <section class="product-header">
+                <img class="photo2" src="../images/img2.jpg" alt="Товар 2">
+                <h3 class="product-name">Комфортные тапочки</h3>
+                <p class="product-cost">800 руб.</p>
+            </section>
 
-    <div class="footer">Футер</div>
+            <section class="product-header">
+                <img src="../images/img3.jpg" alt="Товар 3">
+                <h3 class="product-name">Прикольный костюмчик</h3>
+                <p class="product-cost">2500 руб.</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Футер</p>
+        </footer>
 </body>
+
 </html>

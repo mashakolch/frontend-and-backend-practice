@@ -1,56 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
     <title>Главная</title>
 </head>
+
 <body>
-    <div class="header">Хэдер</div>
-    
-    <div class="nav">
-        <a href="index.html">Главная</a>
-        <a href="pages/news.html">Новости</a>
-        <a href="pages/goods.html">Товары</a>
-        <a href="pages/contacts.html">Контакты</a>
+    <div class="page-container">
+        <header class='header'>
+            <h1>Хэдер</h1>
+        </header>
+        <nav class="nav"> 
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <article class="profile-header">
+                <h1 class="profile-title">Информация об авторе</h1>
+                <img class="profile-photo" src="images/photo.jpg" alt="Фото автора">
+                <h2 class="profile-name">Колеченкова Мария Алексеевна</h2>
+                <p class="profile-group">ЭФБО-04-24</p>
+            </article>
+
+
+
+            <section class="about-me">
+                <h2>Обо мне</h2>
+                <p>Обо мне: Я просто родилась.</p>
+            </section>
+
+            <section class="skills-container">
+                <h2>Мои навыки</h2> 
+                <div class="skills-grid"> 
+                    <div class="skill-tag">Профессионально сплетничаю</div>
+                    <div class="skill-tag">Несмешно шучу</div>
+                    <div class="skill-tag">Смотрю TikTok</div>
+                    <div class="skill-tag">Могу уснуть на любой паре</div>
+                </div>
+            </section>
+
+            <section class="experience-section">
+                <h2 class="section-title">Мой опыт работы</h2>
+                <article class="experience-card">
+                    <div class="experience-grid">
+                        <div class="job">
+                            <h3 class="experience-title">Опыт 1</h3>
+                            <p class>Работала темщицей. Мутила темки туда-сюда.</p>
+                </article>
+                <article class="experience-card">
+                    <h3 class="experience-title">Опыт 2</h3>
+                    <p class="experience-desc">Работала просто хорошим человеком (для души).</p>
+                </article>
+                <article class="experience-card">
+                    <h3 class="experience-title">Опыт 3</h3>
+                    <p class="experience-desc">Работала рэпером. Писала биты для иноагентов.</p>
+                </article>
     </div>
+    </section>
+    </main>
 
-    <div class="content">
-        <h1>Информация об авторе</h1>
-        <img src="images/photo.jpg" alt="Фото" class="photo">
-        <h2>Колеченкова Мария Алексеевна</h2>
-        <p>ЭФБО-04-24</p>
-        
-        <div class="about">
-            <p>Обо мне: Я просто родилась.</p>
-        </div>
-
-        <div class="skills">
-            <span>Профессионально сплетничаю</span>
-            <span>Несмешно шучу</span>
-            <span>Смотрю TikTok</span>
-            <span>Могу уснуть на любой паре</span>
-        </div>
-
-        <div class="experience">
-            <h2>Мой опыт работы</h2>
-            <div class="job">
-                <h3>Опыт 1</h3>
-                <p>Работала темщицей. Мутила темки туда-сюда.</p>
-            </div>
-            <div class="job">
-                <h3>Опыт 2</h3>
-                <p>Работала просто хорошим человеком (для души).</p>
-            </div>
-            <div class="job">
-                <h3>Опыт 3</h3>
-                <p>Работала рэпером. Писала биты для иноагентов.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">Футер</div>
+    <footer class="footer">
+        <p>Футер</p>
+    </footer>
 </body>
+
 </html>
