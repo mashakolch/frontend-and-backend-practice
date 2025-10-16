@@ -1,132 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../style/styles.css">
-    <title>Контакты</title>
-</head>
-
-<body>
-    <div class="page-container">
-        <header class="header">
-            <h1>Контакты</h1>
-        </header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <main class="content">
-            <h1 class="contacts-header">Контакты</h1>
-
-            <p class="email">Email: mashooter06@gmail.com</p>
-            <p class="address">Адрес: ул. Прикольная д.52, кв.99</p>
-
-            <button class="contact-button" onclick="contactModal.showModal()">Связаться со мной</button>
-        </main>
-
-        <dialog id="contactModal">
-            <div class="modal-header">
-                <h2>Форма обратной связи</h2>
-            </div>
-
-            <div class="modal-content">
-                <form id="feedbackForm" method="dialog">
-                    <div class="form-group">
-                        <label for="name">Имя <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Телефон <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Электронная почта <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
-                    </div>
-                    <div class="form-group">
-                        <label for="category">Категория обращения <span class="required">*</span></label>
-                        <select id="category" name="category" required>
-                            <option value="">Выберите категорию</option>
-                            <option value="question">Вопрос</option>
-                            <option value="cooperation">Сотрудничество</option>
-                            <option value="feedback">Отзыв</option>
-                            <option value="other">Другое</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Текст обращения <span class="required">*</span></label>
-                        <textarea id="message" name="message" required placeholder="Опишите вашу проблему или вопрос..."></textarea>
-                    </div>
-
-                    <div class="modal-actions">
-                        <button type="submit" class="btn btn-secondary">Отмена</button>
-                        <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
-                    </div>
-                </form>
-            </div>
-        </dialog>
-
-        <footer class="footer">
-            <p>Футер</p>
-        </footer>
-    </div>
-
-    <script>
-       
-        function submitForm() {
-            const form = document.getElementById('feedbackForm');
-            const formData = new FormData(form);
-
-    
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
-
-            const data = {
-                name: formData.get('name'),
-                phone: formData.get('phone'),
-                email: formData.get('email'),
-                category: formData.get('category'),
-                message: formData.get('message')
-            };
-
-            console.log('Данные формы:', data);
-
-  
-            alert('Спасибо! Ваше обращение отправлено. Я свяжусь с вами в ближайшее время.');
-
-            contactModal.close();
-
-     
-            form.reset();
-        }
-
-        
-        document.getElementById('contactModal').addEventListener('click', function(event) {
-            if (event.target === this) {
-                this.close();
-            }
-        });
-
-        document.getElementById('feedbackForm').addEventListener('keypress', function(event) {
-            if (event.key === 'Enter' && event.target.type !== 'textarea') {
-                event.preventDefault();
-            }
-        });
-    </script>
-</body>
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -139,79 +10,91 @@
 <body>
     <div class="page-container">
         <header class="header">
-            <h1>Контакты</h1>
+            <div class="header__container">
+                <div class="header__row">
+                    <div class="header__col">
+                        <h1 class="header__title">Мой сайтик</h1>
+                    </div>
+                    <div class="header__col-auto">
+                        <span class="header__badge">ЭФБО-04-24</span>
+                    </div>
+                </div>
+            </div>
         </header>
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                <li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
 
         <main class="content">
-            <h1 class="contacts-header">Контакты</h1>
+            <h1 class="content__title">Контакты</h1>
 
-            <p class="email">Email: mashooter06@gmail.com</p>
-            <p class="address">Адрес: ул. Прикольная д.52, кв.99</p>
+            <p class="content__email">Email: mashooter06@gmail.com</p>
+            <p class="content__address">Адрес: ул. Прикольная д.52, кв.99</p>
 
-            <button class="contact-button" onclick="contactModal.showModal()">Связаться со мной</button>
+            <button class="content__button" onclick="contactModal.showModal()">Связаться со мной</button>
         </main>
 
-        <!-- Модальное окно для формы обратной связи -->
-        <dialog id="contactModal">
-            <div class="modal-header">
-                <h2>Форма обратной связи</h2>
+        <dialog class="modal" id="contactModal">
+            <div class="modal__header">
+                <h2 class="modal__title">Форма обратной связи</h2>
             </div>
 
-            <div class="modal-content">
-                <form id="feedbackForm" method="dialog">
-                    <div class="form-group">
-                        <label for="name">Имя <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            <div class="modal__content">
+                <form class="form" id="feedbackForm" method="dialog">
+                    <div class="form__group">
+                        <label class="form__label" for="name">Имя <span class="form__required">*</span></label>
+                        <input class="form__input" type="text" id="name" name="name" required
+                            placeholder="Введите ваше имя">
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Телефон <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+                    <div class="form__group">
+                        <label class="form__label" for="phone">Телефон <span class="form__required">*</span></label>
+                        <input class="form__input" type="tel" id="phone" name="phone" required
+                            placeholder="+7 (XXX) XXX-XX-XX">
                     </div>
-                    <div class="form-group">
-                        <label for="email">Электронная почта <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                    <div class="form__group">
+                        <label class="form__label" for="email">Электронная почта <span class="required">*</span></label>
+                        <input class="form__input" type="email" id="email" name="email" required
+                            placeholder="example@mail.ru">
                     </div>
-                    <div class="form-group">
-                        <label for="category">Категория обращения <span class="required">*</span></label>
-                        <select id="category" name="category" required>
-                            <option value="">Выберите категорию</option>
+                    <div class="form__group">
+                        <label class="form__label" for="category">Категория обращения <span
+                                class="required">*</span></label>
+                        <select class="form__select" id="category" name="category" required>
+                            <option value="category">Выберите категорию</option>
                             <option value="question">Вопрос</option>
                             <option value="cooperation">Сотрудничество</option>
                             <option value="feedback">Отзыв</option>
                             <option value="other">Другое</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Текст обращения <span class="required">*</span></label>
-                        <textarea id="message" name="message" required placeholder="Опишите вашу проблему или вопрос..."></textarea>
+                    <div class="form__group">
+                        <label class="form__label" for="message">Текст обращения <span class="required">*</span></label>
+                        <textarea class="form__textarea" id="message" name="message" required
+                            placeholder="Опишите вашу проблему или вопрос..."></textarea>
                     </div>
 
-                    <div class="modal-actions">
-                        <!-- Кнопка отмены с закрытием модального окна -->
-                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Отмена</button>
-                        <!-- Кнопка отправки с обработкой через JavaScript -->
-                        <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
+                    <div class="modal__actions">
+                        <button class="modal__button modal__button--secondary" type="button"
+                            onclick="closeModal()">Отмена</button>
+                        <button class="modal__button modal__button--primary" type="button"
+                            onclick="submitForm()">Отправить</button>
                     </div>
                 </form>
             </div>
         </dialog>
 
         <footer class="footer">
-            <p>Футер</p>
+            <p class="footer__text">Футер</p>
         </footer>
     </div>
 
     <script>
-        // Функция для закрытия модального окна
         function closeModal() {
             const modal = document.getElementById('contactModal');
             const form = document.getElementById('feedbackForm');
@@ -219,18 +102,15 @@
             form.reset();
         }
 
-        // Функция для отправки формы
         function submitForm() {
             const form = document.getElementById('feedbackForm');
             const formData = new FormData(form);
 
-            // Простая валидация
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
             }
 
-            // Собираем данные формы
             const data = {
                 name: formData.get('name'),
                 phone: formData.get('phone'),
@@ -239,36 +119,29 @@
                 message: formData.get('message')
             };
 
-            // В реальном приложении здесь был бы AJAX-запрос
             console.log('Данные формы:', data);
 
-            // Показываем уведомление об успешной отправке
             alert('Спасибо! Ваше обращение отправлено. Я свяжусь с вами в ближайшее время.');
 
-            // Закрываем модальное окно и очищаем форму
             closeModal();
         }
 
-        // Закрытие модального окна по клику на фон
-        document.getElementById('contactModal').addEventListener('click', function(event) {
+        document.getElementById('contactModal').addEventListener('click', function (event) {
             if (event.target === this) {
                 closeModal();
             }
         });
-
-        // Обработка отправки формы через Enter (предотвращаем стандартное поведение)
-        document.getElementById('feedbackForm').addEventListener('keypress', function(event) {
+        document.getElementById('feedbackForm').addEventListener('keypress', function (event) {
             if (event.key === 'Enter' && event.target.type !== 'textarea') {
                 event.preventDefault();
             }
         });
-
-        // Закрытие модального окна по нажатию ESC
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
                 closeModal();
             }
         });
     </script>
 </body>
+
 </html>
